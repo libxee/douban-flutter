@@ -1,6 +1,6 @@
-# flutterdemo
-
-A new Flutter application.
+# douban-flutter
+---
+豆瓣 flutter实现
 
 ## Getting Started
 
