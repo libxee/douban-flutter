@@ -4,6 +4,7 @@ import 'package:flutterdemo/common/api.dart';
 import 'package:flutterdemo/pages/douban/model/movie_item.dart';
 import 'package:flutterdemo/pages/douban/widget/movie_grid_view.dart';
 import 'package:flutterdemo/pages/douban/widget/section_view.dart';
+import 'package:flutterdemo/pages/douban/widget/toplist_banner.dart';
 
 class DoubanIndex extends StatefulWidget {
   final Widget child;
@@ -40,8 +41,9 @@ class _DoubanIndexState extends State<DoubanIndex>
                 addAutomaticKeepAlives: true,
                 cacheExtent: 10000,
                 children: <Widget>[
+                  TopListBanner(),
                   MovieGridView(nowPlayingList, "影院热映", "fff"),
-                  MovieGridView(comingList, "即将上映", "fff")
+                  MovieGridView(comingList, "即将上映", "fff"),
                 ],
               ),
             ),
@@ -50,11 +52,11 @@ class _DoubanIndexState extends State<DoubanIndex>
 
   Future<void> fetchMovieData()  async{
     Api client = new Api();
-    var nowPlayingData = await client.getDoubanMovies("in_theaters", 0, 6);
-    var comingListData = await client.getDoubanMovies("coming_soon", 0, 6);
+    var response= await Future.wait([client.getDoubanMovies("in_theaters", 0, 6), client.getDoubanMovies("coming_soon", 0, 6)]);
+    print(response[1]);
     setState(() {
-      comingList = formatMovieList(comingListData["subjects"]);
-      nowPlayingList = formatMovieList(nowPlayingData["subjects"]);
+      nowPlayingList= formatMovieList(response[0]["subjects"]);
+      comingList = formatMovieList(response[1]["subjects"]);
     });
   }
 
