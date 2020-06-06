@@ -13,7 +13,7 @@ class TopListBannerItem extends StatelessWidget {
       margin: EdgeInsets.symmetric(horizontal: 5.0),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
-        color: kDeathColor,
+        color: Colors.black12,
         boxShadow: [
           BoxShadow(
             offset: Offset(0, 8),
