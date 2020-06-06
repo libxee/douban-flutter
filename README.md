@@ -11,7 +11,7 @@
 
 ####  预览
 <div>
-  <img width="24%" src="./assets/screenshot/one_index.png"/>
+  <img width="32%" src="./assets/screenshot/one_index.png"/>
 </div>
 
 ### 豆瓣

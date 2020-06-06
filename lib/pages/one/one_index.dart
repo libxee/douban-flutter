@@ -39,7 +39,7 @@ class _OneIndexState extends State<OneIndex> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("一个"),
+          title: Text("一个图文"),
 //          backgroundColor: Colors.white,
         ),
         body: _buildBody());

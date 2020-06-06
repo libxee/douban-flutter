@@ -1,0 +1,88 @@
+{
+  "rating": {
+    "max": 10,
+    "average": 8.2,
+    "details": {
+      "1": 13.0,
+      "2": 125.0,
+      "3": 2600.0,
+      "4": 11034.0,
+      "5": 5206.0
+    },
+    "stars": "45",
+    "min": 0
+  },
+  "genres": [
+    "剧情"
+  ],
+  "title": "理查德·朱维尔的哀歌",
+  "casts": [
+    {
+      "avatars": {
+        "small": "https://img9.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1579450902.87.webp",
+        "large": "https://img9.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1579450902.87.webp",
+        "medium": "https://img9.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1579450902.87.webp"
+      },
+      "name_en": "Paul Walter Hauser",
+      "name": "保罗·沃尔特·豪泽",
+      "alt": "https://movie.douban.com/celebrity/1268250/",
+      "id": "1268250"
+    },
+    {
+      "avatars": {
+        "small": "https://img9.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1533802988.44.webp",
+        "large": "https://img9.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1533802988.44.webp",
+        "medium": "https://img9.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1533802988.44.webp"
+      },
+      "name_en": "Sam Rockwell",
+      "name": "山姆·洛克威尔",
+      "alt": "https://movie.douban.com/celebrity/1047972/",
+      "id": "1047972"
+    },
+    {
+      "avatars": {
+        "small": "https://img9.doubanio.com/view/celebrity/s_ratio_celebrity/public/p5690.webp",
+        "large": "https://img9.doubanio.com/view/celebrity/s_ratio_celebrity/public/p5690.webp",
+        "medium": "https://img9.doubanio.com/view/celebrity/s_ratio_celebrity/public/p5690.webp"
+      },
+      "name_en": "Kathy Bates",
+      "name": "凯西·贝茨",
+      "alt": "https://movie.douban.com/celebrity/1010555/",
+      "id": "1010555"
+    }
+  ],
+  "durations": [
+    "131分钟"
+  ],
+  "collect_count": 73467,
+  "mainland_pubdate": "2020-01-10",
+  "has_video": true,
+  "original_title": "Richard Jewell",
+  "subtype": "movie",
+  "directors": [
+    {
+      "avatars": {
+        "small": "https://img9.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1438777188.48.webp",
+        "large": "https://img9.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1438777188.48.webp",
+        "medium": "https://img9.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1438777188.48.webp"
+      },
+      "name_en": "Clint Eastwood",
+      "name": "克林特·伊斯特伍德",
+      "alt": "https://movie.douban.com/celebrity/1054436/",
+      "id": "1054436"
+    }
+  ],
+  "pubdates": [
+    "2019-11-20(AFI Fest)",
+    "2019-12-13(美国)",
+    "2020-01-10(中国大陆)"
+  ],
+  "year": "2019",
+  "images": {
+    "small": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2578705064.webp",
+    "large": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2578705064.webp",
+    "medium": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2578705064.webp"
+  },
+  "alt": "https://movie.douban.com/subject/25842038/",
+  "id": "25842038"
+}
