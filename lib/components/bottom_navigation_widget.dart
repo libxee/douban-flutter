@@ -8,10 +8,20 @@ class BottomNavigationWidget extends StatefulWidget {
   State<StatefulWidget> createState() => BottomNavigationWidgetState();
 }
 
-class BottomNavigationWidgetState extends State<BottomNavigationWidget> {
+class BottomNavigationWidgetState extends State<BottomNavigationWidget> with SingleTickerProviderStateMixin {
   final _bottomNavigationColor = Colors.blue;
   int _currentIndex = 0;
   List<Widget> list = List();
+  var _controller = PageController(
+    initialPage: 0,
+  );
+
+  @override
+  void dispose() {
+    super.dispose();
+    _controller.dispose();
+  }
+
   @override
   void initState() {
     list..add(DoubanIndex())..add(OneIndex())..add(MineIndex());
@@ -21,8 +31,26 @@ class BottomNavigationWidgetState extends State<BottomNavigationWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: list[_currentIndex],
+//      body: list[_currentIndex],
+      body: PageView(
+        controller: _controller,
+        children: <Widget>[
+          DoubanIndex(),
+          OneIndex(),
+          MineIndex(),
+        ],
+        physics: NeverScrollableScrollPhysics(),
+      ),
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _currentIndex,
+//          onTap: (index)=> _controller.animateToPage(index, duration: Duration(milliseconds: 500), curve: Curves.fastOutSlowIn),
+        onTap: (index) {
+          _controller.jumpToPage(index);
+          setState(() {
+            _currentIndex = index;
+          });
+        },
+        type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(
               icon: Icon(
@@ -50,13 +78,6 @@ class BottomNavigationWidgetState extends State<BottomNavigationWidget> {
                 style: TextStyle(color: _bottomNavigationColor),
               )),
         ],
-        currentIndex: _currentIndex,
-        onTap: (int index) {
-          setState(() {
-            _currentIndex = index;
-          });
-        },
-        type: BottomNavigationBarType.fixed,
       ),
     );
   }

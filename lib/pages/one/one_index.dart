@@ -12,7 +12,7 @@ class OneIndex extends StatefulWidget {
   _OneIndexState createState() => _OneIndexState(title);
 }
 
-class _OneIndexState extends State<OneIndex> {
+class _OneIndexState extends State<OneIndex> with AutomaticKeepAliveClientMixin {
   String title;
   List<OneItem> oneList;
   bool _isLoading = false;
@@ -127,4 +127,7 @@ class _OneIndexState extends State<OneIndex> {
     super.dispose();
     this._scrollController.dispose();
   }
+
+  @override
+  bool get wantKeepAlive => true;
 }
