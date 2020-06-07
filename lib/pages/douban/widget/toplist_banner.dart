@@ -15,11 +15,12 @@ class _TopListBannerState extends State<TopListBanner> {
   var rankList = [];
   @override
   void initState() {
+//    top250 | weekly | new_movies| us_box
     rankList
-      ..add(new RankItem("实时热门榜", "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2604517782.webp", "每小时更新一次", ""))
-      ..add(new RankItem("豆瓣电影Top250", "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p480747492.jpg", "豆瓣榜单", ""))
-      ..add(new RankItem("一周口碑电影榜", "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2594916975.webp", "每周五更新", ""))
-      ..add(new RankItem("欧美电影榜", "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2600111343.webp", "每周五更新", ""));
+      ..add(new RankItem("实时热门榜", "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2604517782.webp", "每小时更新一次", "new_movies"))
+      ..add(new RankItem("豆瓣电影Top250", "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p480747492.jpg", "豆瓣榜单", "top250"))
+      ..add(new RankItem("一周口碑电影榜", "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2594916975.webp", "每周五更新", "weekly"))
+      ..add(new RankItem("欧美电影榜", "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2600111343.webp", "每周五更新", "use_box"));
     super.initState();
   }
   @override

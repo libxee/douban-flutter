@@ -7,14 +7,15 @@ import 'movie_cover.dart';
 class MovieItemView extends StatelessWidget {
   final MovieItem movie;
   MovieItemView(this.movie);
-  void tapMovie(){
-    print("click movie");
+  tapMovie(context){
+    Navigator.pushNamed(context, "/movieDetail",
+        arguments: {"movieId":movie.id, "movieTitle":movie.title});
   }
   @override
   Widget build(BuildContext context) {
     var width = (Screen.width - 15 * 4) / 3;
     return GestureDetector(
-      onTap: tapMovie,
+      onTap: ()=>{tapMovie(context)},
       child: Container(
         width: width,
         child: Column(
