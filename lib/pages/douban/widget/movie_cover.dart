@@ -1,10 +1,11 @@
-import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter/material.dart';
 
 class MovieCoverImage extends StatelessWidget {
   final String imgUrl;
   final double width;
   final double height;
+
   MovieCoverImage(this.imgUrl, {this.width, this.height});
 
   @override

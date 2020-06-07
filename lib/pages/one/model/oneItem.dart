@@ -51,7 +51,8 @@ class OneItem {
       this.sharenum,
       this.commentnum);
 
-  factory OneItem.fromJson(Map<String, dynamic> json) => _$OneItemFromJson(json);
-  Map<String, dynamic> toJson() => _$OneItemToJson(this);
+  factory OneItem.fromJson(Map<String, dynamic> json) =>
+      _$OneItemFromJson(json);
 
+  Map<String, dynamic> toJson() => _$OneItemToJson(this);
 }

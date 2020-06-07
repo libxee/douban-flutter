@@ -8,7 +8,8 @@ class BottomNavigationWidget extends StatefulWidget {
   State<StatefulWidget> createState() => BottomNavigationWidgetState();
 }
 
-class BottomNavigationWidgetState extends State<BottomNavigationWidget> with SingleTickerProviderStateMixin {
+class BottomNavigationWidgetState extends State<BottomNavigationWidget>
+    with SingleTickerProviderStateMixin {
   final _bottomNavigationColor = Colors.blue;
   int _currentIndex = 0;
   List<Widget> list = List();

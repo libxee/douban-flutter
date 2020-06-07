@@ -1,13 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
 class SectionView extends StatelessWidget {
   final String title;
   final String action;
 
   SectionView(this.title, this.action);
+
   @override
   Widget build(BuildContext context) {
-
     return Container(
         color: Colors.white,
         padding: EdgeInsets.fromLTRB(15, 15, 15, 5),
@@ -21,7 +22,9 @@ class SectionView extends StatelessWidget {
                   '$title',
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                 ),
-                SizedBox(height: 5,),
+                SizedBox(
+                  height: 5,
+                ),
                 Container(
                   width: 70,
                   height: 2,
@@ -38,16 +41,22 @@ class SectionView extends StatelessWidget {
 //                  }
 //                },
                 child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: <Widget>[
-                    Text('全部',style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),),
-                    SizedBox(width: 3,),
-                    Icon(CupertinoIcons.forward, size: 14,),
-                  ],
-                )
-            )
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                Text(
+                  '全部',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+                ),
+                SizedBox(
+                  width: 3,
+                ),
+                Icon(
+                  CupertinoIcons.forward,
+                  size: 14,
+                ),
+              ],
+            ))
           ],
-        )
-    );
+        ));
   }
 }

@@ -5,13 +5,17 @@ import 'package:flutterdemo/util/screen.dart';
 
 class TopListBannerItem extends StatelessWidget {
   final rankItem;
+
   const TopListBannerItem(this.rankItem);
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () => {
-        Navigator.pushNamed(context, "/movieRankList",
-            arguments: {"rankType": rankItem?.rankType, "rankListName":rankItem?.rankListName})
+        Navigator.pushNamed(context, "/movieRankList", arguments: {
+          "rankType": rankItem?.rankType,
+          "rankListName": rankItem?.rankListName
+        })
       },
       child: Container(
         width: MediaQuery.of(context).size.width,

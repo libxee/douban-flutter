@@ -7,19 +7,24 @@ import 'model/oneItem.dart';
 
 class OneIndex extends StatefulWidget {
   final String title;
+
   const OneIndex({Key key, this.title}) : super(key: key);
+
   @override
   _OneIndexState createState() => _OneIndexState(title);
 }
 
-class _OneIndexState extends State<OneIndex> with AutomaticKeepAliveClientMixin {
+class _OneIndexState extends State<OneIndex>
+    with AutomaticKeepAliveClientMixin {
   String title;
   List<OneItem> oneList;
   bool _isLoading = false;
   bool _hasMore = true;
   String currentDate;
   ScrollController _scrollController = ScrollController();
+
   _OneIndexState(this.title);
+
   @override
   void initState() {
     super.initState();
@@ -88,7 +93,9 @@ class _OneIndexState extends State<OneIndex> with AutomaticKeepAliveClientMixin 
       setState(() {
         currentDate = getPrevMonth(currentDate);
         List<OneItem> newOneList = formatOneList(data["data"]);
-        if(newOneList.length == 0){ _hasMore = false;}
+        if (newOneList.length == 0) {
+          _hasMore = false;
+        }
         newOneList.forEach((element) {
           oneList.add(element);
         });
@@ -112,6 +119,7 @@ class _OneIndexState extends State<OneIndex> with AutomaticKeepAliveClientMixin 
     String currentDate = "${year}-${month}";
     return currentDate;
   }
+
   String getPrevMonth(String currentDate) {
     List<String> dataArr = currentDate.split("-");
     int year = int.parse(dataArr[0]);
@@ -122,6 +130,7 @@ class _OneIndexState extends State<OneIndex> with AutomaticKeepAliveClientMixin 
     String prevDate = "${curYear}-${prevMonth}";
     return prevDate;
   }
+
   @override
   void dispose() {
     super.dispose();

@@ -1,10 +1,10 @@
-import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutterdemo/pages/one/model/oneItem.dart';
-import 'package:transparent_image/transparent_image.dart';
 
 class OneItemView extends StatelessWidget {
   final OneItem oneItem;
+
   const OneItemView(this.oneItem);
 
   Widget renderCover() {
@@ -76,6 +76,7 @@ class OneItemView extends StatelessWidget {
           ],
         ));
   }
+
   Widget renderInteractionArea() {
     return Container(
       margin: EdgeInsets.only(bottom: 12),

@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 
 class OneDetail extends StatefulWidget {
   final arguments;
+
   OneDetail({Key key, this.arguments}) : super(key: key);
+
   @override
   _OneDetailState createState() => _OneDetailState();
 }

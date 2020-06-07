@@ -26,8 +26,7 @@ MovieItem _$MovieItemFromJson(Map<String, dynamic> json) {
     ..id = json['id'] as String;
 }
 
-Map<String, dynamic> _$MovieItemToJson(MovieItem instance) =>
-    <String, dynamic>{
+Map<String, dynamic> _$MovieItemToJson(MovieItem instance) => <String, dynamic>{
       'rating': instance.rating,
       'genres': instance.genres,
       'title': instance.title,

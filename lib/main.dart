@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterdemo/components/bottom_navigation_widget.dart';
 import 'package:flutterdemo/router/notfound.dart';
-import 'package:flutterdemo/router/routes.dart';
 import 'package:flutterdemo/router/routes.dart';
 
 void main() {

@@ -1,20 +1,22 @@
-import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutterdemo/common/api.dart';
 import 'package:flutterdemo/pages/douban/model/movie_item.dart';
 import 'package:flutterdemo/pages/douban/widget/movie_grid_view.dart';
-import 'package:flutterdemo/pages/douban/widget/section_view.dart';
 import 'package:flutterdemo/pages/douban/widget/toplist_banner.dart';
 
 class DoubanIndex extends StatefulWidget {
   final Widget child;
+
   DoubanIndex({Key key, this.child}) : super(key: key);
+
   _DoubanIndexState createState() => _DoubanIndexState();
 }
 
 class _DoubanIndexState extends State<DoubanIndex>
     with AutomaticKeepAliveClientMixin {
   var nowPlayingList, comingList;
+
   @override
   void initState() {
     super.initState();
@@ -23,7 +25,7 @@ class _DoubanIndexState extends State<DoubanIndex>
 
   @override
   Widget build(BuildContext context) {
-    if (nowPlayingList == null && comingList ==null) {
+    if (nowPlayingList == null && comingList == null) {
       return new Center(
         child: new CupertinoActivityIndicator(),
       );
@@ -50,12 +52,15 @@ class _DoubanIndexState extends State<DoubanIndex>
           ));
   }
 
-  Future<void> fetchMovieData()  async{
+  Future<void> fetchMovieData() async {
     Api client = new Api();
-    var response= await Future.wait([client.getDoubanMovies("in_theaters", 0, 6), client.getDoubanMovies("coming_soon", 0, 6)]);
+    var response = await Future.wait([
+      client.getDoubanMovies("in_theaters", 0, 6),
+      client.getDoubanMovies("coming_soon", 0, 6)
+    ]);
     print(response[1]);
     setState(() {
-      nowPlayingList= formatMovieList(response[0]["subjects"]);
+      nowPlayingList = formatMovieList(response[0]["subjects"]);
       comingList = formatMovieList(response[1]["subjects"]);
     });
   }
