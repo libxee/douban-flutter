@@ -12,6 +12,7 @@
 ####  预览
 <div>
   <img width="32%" src="./assets/screenshot/one_index.png"/>
+  <img width="32%" src="./assets/screenshot/one_detail.png"/>
 </div>
 
 ### 豆瓣电影

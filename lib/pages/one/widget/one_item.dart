@@ -126,8 +126,10 @@ class OneItemView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-        onTap: () {
-          print("click item");
+        onTap: ()=> {
+          Navigator.pushNamed(context, "/oneDetail", arguments: {
+            "oneItem": oneItem
+          })
         },
         child: Container(
           margin: EdgeInsets.fromLTRB(16, 16, 16, 0),
