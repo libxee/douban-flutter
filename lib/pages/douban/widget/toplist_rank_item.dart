@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterdemo/common/constant.dart';
 import 'package:flutterdemo/pages/douban/model/movie_item.dart';
 import 'package:flutterdemo/pages/douban/widget/movie_cover.dart';
 
@@ -34,7 +35,7 @@ class RankItemView extends StatelessWidget {
       child: Container(
         padding: EdgeInsets.fromLTRB(spaceWidth, spaceWidth, 0, spaceWidth),
         decoration: BoxDecoration(
-            border: Border(bottom: BorderSide(color: Colors.grey, width: 0.5)),
+            border: Border(bottom: BorderSide(color:kDeviderColor, width: 0.5)),
             color: Colors.white),
         child: Row(
           children: <Widget>[
@@ -55,6 +56,7 @@ class RankItemView extends StatelessWidget {
                     Text(
                       movie.title,
                       style: TextStyle(
+                        color: kTitleTextColor,
                         fontWeight: FontWeight.bold,
                         fontSize: 18,
                       ),

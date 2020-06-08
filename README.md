@@ -21,4 +21,5 @@
 
 <div>
   <img width="32%" src="./assets/screenshot/douban_index.png"/>
+   <img width="32%" src="./assets/screenshot/douban_ranklist.png"/>
 </div>
