@@ -29,8 +29,10 @@ class Api {
 //  start: num
 //  count: num
   Future<dynamic> getDoubanMovies(String type, int start, int count) async {
+    print(start);
     Response<Map> response = await dio.get(doubanMovies + type,
-        queryParameters: {"count": count ?? 20, "start": start ?? 0});
+        queryParameters: {"start": start, "count": count, });
+    print(response);
     return response.data;
   }
 }

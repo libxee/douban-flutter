@@ -36,7 +36,7 @@ class _TopListBannerState extends State<TopListBanner> {
           "欧美电影榜",
           "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2600111343.webp",
           "每周五更新",
-          "use_box"));
+          "us_box"));
     super.initState();
   }
 
