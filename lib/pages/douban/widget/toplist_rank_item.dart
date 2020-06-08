@@ -30,12 +30,14 @@ class RankItemView extends StatelessWidget {
 
     return GestureDetector(
       onTap: () {
-//      AppNavigator.pushMovieDetail(context, movie);
+        Navigator.pushNamed(context, "/movieDetail",
+            arguments: {"movieId": movie.id, "movieTitle": movie.title});
       },
       child: Container(
         padding: EdgeInsets.fromLTRB(spaceWidth, spaceWidth, 0, spaceWidth),
         decoration: BoxDecoration(
-            border: Border(bottom: BorderSide(color:kDeviderColor, width: 0.5)),
+            border:
+                Border(bottom: BorderSide(color: kDeviderColor, width: 0.5)),
             color: Colors.white),
         child: Row(
           children: <Widget>[
@@ -71,17 +73,16 @@ class RankItemView extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
                         Text(
-                           "${movie.rating["average"]}分",
+                          "${movie.rating["average"]}分",
                           style: TextStyle(color: Colors.grey, fontSize: 12.0),
-
                         ),
                         SizedBox(
                           width: 2,
                         ),
                         Text(
                           "（${movie.collect_count}人评价）",
-                            style: TextStyle(color: Colors.grey, fontSize: 12.0),
-              )
+                          style: TextStyle(color: Colors.grey, fontSize: 12.0),
+                        )
                       ],
                     ),
                     SizedBox(

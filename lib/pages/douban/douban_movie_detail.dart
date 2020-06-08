@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutterdemo/pages/douban/widget/movie_detail_header.dart';
 class DoubanMovieDetail extends StatefulWidget {
   final arguments;
 
@@ -21,13 +21,24 @@ class _DoubanMovieDetailState extends State<DoubanMovieDetail> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-      title: Text(
-        arguments["movieTitle"],
-        overflow: TextOverflow.ellipsis,
-        maxLines: 1,
-      ),
-      centerTitle: true,
-    ));
+    body: CustomScrollView(
+      slivers: <Widget>[
+        SliverPersistentHeader(
+          pinned: true,
+          delegate: DetailHeader(
+              title:arguments["movieTitle"],
+              collapsedHeight: 50,
+              expandedHeight: 320,
+              paddingTop: MediaQuery.of(context).padding.top,
+              coverImgUrl: 'http://image.wufazhuce.com/FnTZrZAil8kGLXhMc5lOXvW9zybF'
+          ),
+        ),
+        SliverFillRemaining(
+          child: Text("测试"),
+        )
+      ],
+    ),);
   }
+
 }
+

@@ -10,7 +10,7 @@ const kWarnColor = Color(0xFFFF4848);
 const kSuccColor = Color(0xFF36C12C);
 const kPrimaryColor = Color(0xFF3382CC);
 final kShadowColor = Color(0xFFB7B7B7).withOpacity(.16);
-const kDeviderColor = Color(0xFFa1a1a1);
+const kDeviderColor = Color(0xFFeeeeee);
 final kActiveShadowColor = Color(0xFF4056C6).withOpacity(.15);
 
 // Text Style

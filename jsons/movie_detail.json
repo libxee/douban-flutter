@@ -1,0 +1,683 @@
+{
+  "rating": {
+    "max": 10,
+    "average": 8.2,
+    "details": {
+      "1": 13.0,
+      "2": 125.0,
+      "3": 2608.0,
+      "4": 10989.0,
+      "5": 5179.0
+    },
+    "stars": "45",
+    "min": 0
+  },
+  "reviews_count": 319,
+  "videos": [
+    {
+      "source": {
+        "literal": "miguvideo",
+        "pic": "https://img9.doubanio.com/f/movie/d3e1f41e6a89962d1a2860dabb04b2d4e0c8df89/pics/movie/video-miguvideo.png",
+        "name": "咪咕视频"
+      },
+      "sample_link": "https://m.miguvideo.com/mgs/msite/prd/detail.html?cid=672081517&pwId=d01197d3076b4164af82983c408bb996",
+      "video_id": "5500982205",
+      "need_pay": true
+    },
+    {
+      "source": {
+        "literal": "qq",
+        "pic": "https://img9.doubanio.com/f/movie/0a74f4379607fa731489d7f34daa545df9481fa0/pics/movie/video-qq.png",
+        "name": "腾讯视频"
+      },
+      "sample_link": "http://v.qq.com/x/cover/mzc00200btd1uri.html?ptag=douban.movie",
+      "video_id": "mzc00200btd1uri",
+      "need_pay": true
+    },
+    {
+      "source": {
+        "literal": "youku",
+        "pic": "https://img9.doubanio.com/f/movie/886b26a83d18bc60de4ee1daac38145f03c88792/pics/movie/video-youku.png",
+        "name": "优酷视频"
+      },
+      "sample_link": "http://v.youku.com/v_show/id_XNDYwMzk2NTU5Ng==.html?tpa=dW5pb25faWQ9MzAwMDA4XzEwMDAwMl8wMl8wMQ&refer=esfhz_operation.xuka.xj_00003036_000000_FNZfau_19010900",
+      "video_id": "XNDYwMzk2NTU5Ng==",
+      "need_pay": true
+    },
+    {
+      "source": {
+        "literal": "iqiyi",
+        "pic": "https://img9.doubanio.com/f/movie/7c9e516e02c6fe445b6559c0dd2a705e8b17d1c9/pics/movie/video-iqiyi.png",
+        "name": "爱奇艺视频"
+      },
+      "sample_link": "http://www.iqiyi.com/v_19rwgfsb9s.html?vfm=m_331_dbdy&fv=4904d94982104144a1548dd9040df241",
+      "video_id": "19rwgfsb9s",
+      "need_pay": true
+    },
+    {
+      "source": {
+        "literal": "bilibili",
+        "pic": "https://img9.doubanio.com/f/movie/f536fe0ea1cbb0914658ae803125d078351f9047/pics/movie/video-bilibili.png",
+        "name": "哔哩哔哩"
+      },
+      "sample_link": "https://www.bilibili.com/bangumi/play/ss32438?bsource=douban",
+      "video_id": "ss32438",
+      "need_pay": false
+    }
+  ],
+  "wish_count": 88836,
+  "original_title": "Richard Jewell",
+  "blooper_urls": [
+    "https://vt1.doubanio.com/202006082016/3103e094959c39e656c643bf519a54a0/view/movie/M/302570570.mp4",
+    "https://vt1.doubanio.com/202006082016/5c3401b4d91935c1541f6237e4177a09/view/movie/M/302570456.mp4",
+    "https://vt1.doubanio.com/202006082016/45684289be194cfa63998ff11b84d6f4/view/movie/M/302560966.mp4"
+  ],
+  "collect_count": 74084,
+  "images": {
+    "small": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2578705064.webp",
+    "large": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2578705064.webp",
+    "medium": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2578705064.webp"
+  },
+  "douban_site": "",
+  "year": "2019",
+  "popular_comments": [
+    {
+      "rating": {
+        "max": 5,
+        "value": 5.0,
+        "min": 0
+      },
+      "useful_count": 188,
+      "author": {
+        "uid": "47029943",
+        "avatar": "https://img9.doubanio.com/icon/u47029943-9.jpg",
+        "signature": "我行即道 我身即法",
+        "alt": "https://www.douban.com/people/47029943/",
+        "id": "47029943",
+        "name": "竹淡刻骨"
+      },
+      "subject_id": "25842038",
+      "content": "AMC。每次FBI要诓Richard了，观众们就哀嚎一片。我们需要这样的电影提醒我们警惕zf和媒体滥用权力。Watson律师办公室反复出现的i fear the government more than i fear territorist正是这部影片的注脚吧。\n故事讲的很好，爆炸案男主角选的也很合适。已经连续看了三部Rockwell了，他是我新欢！！",
+      "created_at": "2019-12-21 14:55:49",
+      "id": "2094844483"
+    },
+    {
+      "rating": {
+        "max": 5,
+        "value": 4.0,
+        "min": 0
+      },
+      "useful_count": 391,
+      "author": {
+        "uid": "qijiuzhiyue",
+        "avatar": "https://img9.doubanio.com/icon/u1032989-51.jpg",
+        "signature": "微信公众账号： ttfilm",
+        "alt": "https://www.douban.com/people/qijiuzhiyue/",
+        "id": "1032989",
+        "name": "桃桃林林"
+      },
+      "subject_id": "25842038",
+      "content": "仍然是死硬派的东木头，这个选题太适合老爷子了，又是怼天怼地的故事。被侮辱与被损害的主题，也更容易让观众同情。男主选得特别好，表面看起来憨憨的，却始终坚持着他的人生观。他可能生活上或性格上有很多问题，但是，他努力捍卫着自己的正义。所以最后还是挺热血的，以及，这片骂媒体也是骂得很狠了。最后，山姆·洛克威尔的表演，真是每次都不同，演什么是什么，真厉害。",
+      "created_at": "2020-01-10 17:48:07",
+      "id": "2129171869"
+    },
+    {
+      "rating": {
+        "max": 5,
+        "value": 4.0,
+        "min": 0
+      },
+      "useful_count": 252,
+      "author": {
+        "uid": "anubis666",
+        "avatar": "https://img9.doubanio.com/icon/u2077901-13.jpg",
+        "signature": "",
+        "alt": "https://www.douban.com/people/anubis666/",
+        "id": "2077901",
+        "name": "Anubis"
+      },
+      "subject_id": "25842038",
+      "content": "好莱坞叙事教科书。一个镜头不多，紧凑到塞不进片头credit。89岁的老爷子依旧稳健，技法和良心都是业界标杆。我要能活到这个岁数，只求大小便还能自理。second thoughts: 看到了Kathy Scruggs的争议，想来确实有不少MAGA circle jerk的点。相信是人上了年纪politically tone deaf而非本意如此，赶上弹劾大戏开幕的时候上映被解读成辩护川普实属冤枉（要是过几天川普发推\"great film #witchhunt\"可就太糟了）",
+      "created_at": "2019-12-15 09:00:00",
+      "id": "2084415594"
+    },
+    {
+      "rating": {
+        "max": 5,
+        "value": 4.0,
+        "min": 0
+      },
+      "useful_count": 357,
+      "author": {
+        "uid": "shezaizuyi",
+        "avatar": "https://img9.doubanio.com/icon/u44889149-3.jpg",
+        "signature": "wubba lubba dub dub",
+        "alt": "https://www.douban.com/people/shezaizuyi/",
+        "id": "44889149",
+        "name": "舌在足矣"
+      },
+      "subject_id": "25842038",
+      "content": "89岁的东木，一如既往的稳健，尤其是对演员出色的控制。主演Paul Walter Hauser如果不是因为本片，估计一辈子都只能在好莱坞演white trash屌丝男的角色了。关于新闻媒体和执法机构在“舆论法庭”里扮演的不光彩的角色，本片在当下的现实意义可以说是不言而喻",
+      "created_at": "2019-12-02 12:07:07",
+      "id": "1982183072"
+    }
+  ],
+  "alt": "https://movie.douban.com/subject/25842038/",
+  "id": "25842038",
+  "mobile_url": "https://movie.douban.com/subject/25842038/mobile",
+  "photos_count": 128,
+  "pubdate": "2020-01-10",
+  "title": "理查德·朱维尔的哀歌",
+  "do_count": null,
+  "has_video": true,
+  "share_url": "https://m.douban.com/movie/subject/25842038",
+  "seasons_count": null,
+  "languages": [
+    "英语"
+  ],
+  "schedule_url": "https://movie.douban.com/subject/25842038/cinema/",
+  "writers": [
+    {
+      "avatars": {
+        "small": "https://img9.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1556181352.08.webp",
+        "large": "https://img9.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1556181352.08.webp",
+        "medium": "https://img9.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1556181352.08.webp"
+      },
+      "name_en": "Marie Brenner",
+      "name": "玛丽·布伦纳",
+      "alt": "https://movie.douban.com/celebrity/1038064/",
+      "id": "1038064"
+    },
+    {
+      "avatars": {
+        "small": "https://img9.doubanio.com/view/celebrity/s_ratio_celebrity/public/p48290.webp",
+        "large": "https://img9.doubanio.com/view/celebrity/s_ratio_celebrity/public/p48290.webp",
+        "medium": "https://img9.doubanio.com/view/celebrity/s_ratio_celebrity/public/p48290.webp"
+      },
+      "name_en": "Billy Ray",
+      "name": "比利·雷",
+      "alt": "https://movie.douban.com/celebrity/1295291/",
+      "id": "1295291"
+    }
+  ],
+  "pubdates": [
+    "2019-11-20(AFI Fest)",
+    "2019-12-13(美国)",
+    "2020-01-10(中国大陆)"
+  ],
+  "website": "",
+  "tags": [
+    "真实事件改编",
+    "美国",
+    "人性",
+    "剧情",
+    "传记",
+    "犯罪",
+    "2019",
+    "媒体",
+    "新闻媒体",
+    "温情"
+  ],
+  "has_schedule": true,
+  "durations": [
+    "131分钟"
+  ],
+  "genres": [
+    "剧情"
+  ],
+  "collection": null,
+  "trailers": [
+    {
+      "medium": "https://img9.doubanio.com/img/trailer/medium/2581082566.jpg?",
+      "title": "中国预告片：坚守不渝版 (中文字幕)",
+      "subject_id": "25842038",
+      "alt": "https://movie.douban.com/trailer/257777/",
+      "small": "https://img9.doubanio.com/img/trailer/small/2581082566.jpg?",
+      "resource_url": "https://vt1.doubanio.com/202006082016/ad2bd8603bc0bed2ab199151d59aad26/view/movie/M/302570777.mp4",
+      "id": "257777"
+    },
+    {
+      "medium": "https://img9.doubanio.com/img/trailer/medium/2580875027.jpg?",
+      "title": "中国预告片：永不妥协版 (中文字幕)",
+      "subject_id": "25842038",
+      "alt": "https://movie.douban.com/trailer/257732/",
+      "small": "https://img9.doubanio.com/img/trailer/small/2580875027.jpg?",
+      "resource_url": "https://vt1.doubanio.com/202006082016/e43e4009dec0771a429812a4455e7420/view/movie/M/302570732.mp4",
+      "id": "257732"
+    },
+    {
+      "medium": "https://img9.doubanio.com/img/trailer/medium/2580665391.jpg?",
+      "title": "中国预告片：共渡难关版 (中文字幕)",
+      "subject_id": "25842038",
+      "alt": "https://movie.douban.com/trailer/257660/",
+      "small": "https://img9.doubanio.com/img/trailer/small/2580665391.jpg?",
+      "resource_url": "https://vt1.doubanio.com/202006082016/980c58bc23bfbe07b378c4c334248789/view/movie/M/302570660.mp4",
+      "id": "257660"
+    },
+    {
+      "medium": "https://img9.doubanio.com/img/trailer/medium/2580665337.jpg?",
+      "title": "中国预告片：舆论风暴版 (中文字幕)",
+      "subject_id": "25842038",
+      "alt": "https://movie.douban.com/trailer/257659/",
+      "small": "https://img9.doubanio.com/img/trailer/small/2580665337.jpg?",
+      "resource_url": "https://vt1.doubanio.com/202006082016/cb17509d862bb2dc447f8c1b60e4c2ca/view/movie/M/302570659.mp4",
+      "id": "257659"
+    }
+  ],
+  "episodes_count": null,
+  "trailer_urls": [
+    "https://vt1.doubanio.com/202006082016/ad2bd8603bc0bed2ab199151d59aad26/view/movie/M/302570777.mp4",
+    "https://vt1.doubanio.com/202006082016/e43e4009dec0771a429812a4455e7420/view/movie/M/302570732.mp4",
+    "https://vt1.doubanio.com/202006082016/980c58bc23bfbe07b378c4c334248789/view/movie/M/302570660.mp4",
+    "https://vt1.doubanio.com/202006082016/cb17509d862bb2dc447f8c1b60e4c2ca/view/movie/M/302570659.mp4"
+  ],
+  "has_ticket": true,
+  "bloopers": [
+    {
+      "medium": "https://img9.doubanio.com/img/trailer/medium/2580219611.jpg?",
+      "title": "花絮 (中文字幕)",
+      "subject_id": "25842038",
+      "alt": "https://movie.douban.com/trailer/257570/",
+      "small": "https://img9.doubanio.com/img/trailer/small/2580219611.jpg?",
+      "resource_url": "https://vt1.doubanio.com/202006082016/3103e094959c39e656c643bf519a54a0/view/movie/M/302570570.mp4",
+      "id": "257570"
+    },
+    {
+      "medium": "https://img9.doubanio.com/img/trailer/medium/2579914393.jpg?",
+      "title": "花絮 (中文字幕)",
+      "subject_id": "25842038",
+      "alt": "https://movie.douban.com/trailer/257456/",
+      "small": "https://img9.doubanio.com/img/trailer/small/2579914393.jpg?",
+      "resource_url": "https://vt1.doubanio.com/202006082016/5c3401b4d91935c1541f6237e4177a09/view/movie/M/302570456.mp4",
+      "id": "257456"
+    },
+    {
+      "medium": "https://img9.doubanio.com/img/trailer/medium/2577476666.jpg?",
+      "title": "花絮 (中文字幕)",
+      "subject_id": "25842038",
+      "alt": "https://movie.douban.com/trailer/256966/",
+      "small": "https://img9.doubanio.com/img/trailer/small/2577476666.jpg?",
+      "resource_url": "https://vt1.doubanio.com/202006082016/45684289be194cfa63998ff11b84d6f4/view/movie/M/302560966.mp4",
+      "id": "256966"
+    }
+  ],
+  "clip_urls": [
+    "https://vt1.doubanio.com/202006082016/5359c3db53951825e4029a8dbc3fb6e2/view/movie/M/302570476.mp4"
+  ],
+  "current_season": null,
+  "casts": [
+    {
+      "avatars": {
+        "small": "https://img9.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1579450902.87.webp",
+        "large": "https://img9.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1579450902.87.webp",
+        "medium": "https://img9.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1579450902.87.webp"
+      },
+      "name_en": "Paul Walter Hauser",
+      "name": "保罗·沃尔特·豪泽",
+      "alt": "https://movie.douban.com/celebrity/1268250/",
+      "id": "1268250"
+    },
+    {
+      "avatars": {
+        "small": "https://img9.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1533802988.44.webp",
+        "large": "https://img9.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1533802988.44.webp",
+        "medium": "https://img9.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1533802988.44.webp"
+      },
+      "name_en": "Sam Rockwell",
+      "name": "山姆·洛克威尔",
+      "alt": "https://movie.douban.com/celebrity/1047972/",
+      "id": "1047972"
+    },
+    {
+      "avatars": {
+        "small": "https://img9.doubanio.com/view/celebrity/s_ratio_celebrity/public/p5690.webp",
+        "large": "https://img9.doubanio.com/view/celebrity/s_ratio_celebrity/public/p5690.webp",
+        "medium": "https://img9.doubanio.com/view/celebrity/s_ratio_celebrity/public/p5690.webp"
+      },
+      "name_en": "Kathy Bates",
+      "name": "凯西·贝茨",
+      "alt": "https://movie.douban.com/celebrity/1010555/",
+      "id": "1010555"
+    },
+    {
+      "avatars": {
+        "small": "https://img9.doubanio.com/view/celebrity/s_ratio_celebrity/public/p25599.webp",
+        "large": "https://img9.doubanio.com/view/celebrity/s_ratio_celebrity/public/p25599.webp",
+        "medium": "https://img9.doubanio.com/view/celebrity/s_ratio_celebrity/public/p25599.webp"
+      },
+      "name_en": "Olivia Wilde",
+      "name": "奥利维亚·王尔德",
+      "alt": "https://movie.douban.com/celebrity/1031795/",
+      "id": "1031795"
+    }
+  ],
+  "countries": [
+    "美国"
+  ],
+  "mainland_pubdate": "2020-01-10",
+  "photos": [
+    {
+      "thumb": "https://img9.doubanio.com/view/photo/m/public/p2580214279.webp",
+      "image": "https://img9.doubanio.com/view/photo/l/public/p2580214279.webp",
+      "cover": "https://img9.doubanio.com/view/photo/sqs/public/p2580214279.webp",
+      "alt": "https://movie.douban.com/photos/photo/2580214279/",
+      "id": "2580214279",
+      "icon": "https://img9.doubanio.com/view/photo/s/public/p2580214279.webp"
+    },
+    {
+      "thumb": "https://img9.doubanio.com/view/photo/m/public/p2577352013.webp",
+      "image": "https://img9.doubanio.com/view/photo/l/public/p2577352013.webp",
+      "cover": "https://img9.doubanio.com/view/photo/sqs/public/p2577352013.webp",
+      "alt": "https://movie.douban.com/photos/photo/2577352013/",
+      "id": "2577352013",
+      "icon": "https://img9.doubanio.com/view/photo/s/public/p2577352013.webp"
+    },
+    {
+      "thumb": "https://img9.doubanio.com/view/photo/m/public/p2589190774.webp",
+      "image": "https://img9.doubanio.com/view/photo/l/public/p2589190774.webp",
+      "cover": "https://img9.doubanio.com/view/photo/sqs/public/p2589190774.webp",
+      "alt": "https://movie.douban.com/photos/photo/2589190774/",
+      "id": "2589190774",
+      "icon": "https://img9.doubanio.com/view/photo/s/public/p2589190774.webp"
+    },
+    {
+      "thumb": "https://img9.doubanio.com/view/photo/m/public/p2585085867.webp",
+      "image": "https://img9.doubanio.com/view/photo/l/public/p2585085867.webp",
+      "cover": "https://img9.doubanio.com/view/photo/sqs/public/p2585085867.webp",
+      "alt": "https://movie.douban.com/photos/photo/2585085867/",
+      "id": "2585085867",
+      "icon": "https://img9.doubanio.com/view/photo/s/public/p2585085867.webp"
+    },
+    {
+      "thumb": "https://img9.doubanio.com/view/photo/m/public/p2580396453.webp",
+      "image": "https://img9.doubanio.com/view/photo/l/public/p2580396453.webp",
+      "cover": "https://img9.doubanio.com/view/photo/sqs/public/p2580396453.webp",
+      "alt": "https://movie.douban.com/photos/photo/2580396453/",
+      "id": "2580396453",
+      "icon": "https://img9.doubanio.com/view/photo/s/public/p2580396453.webp"
+    },
+    {
+      "thumb": "https://img9.doubanio.com/view/photo/m/public/p2577352057.webp",
+      "image": "https://img9.doubanio.com/view/photo/l/public/p2577352057.webp",
+      "cover": "https://img9.doubanio.com/view/photo/sqs/public/p2577352057.webp",
+      "alt": "https://movie.douban.com/photos/photo/2577352057/",
+      "id": "2577352057",
+      "icon": "https://img9.doubanio.com/view/photo/s/public/p2577352057.webp"
+    },
+    {
+      "thumb": "https://img9.doubanio.com/view/photo/m/public/p2577352055.webp",
+      "image": "https://img9.doubanio.com/view/photo/l/public/p2577352055.webp",
+      "cover": "https://img9.doubanio.com/view/photo/sqs/public/p2577352055.webp",
+      "alt": "https://movie.douban.com/photos/photo/2577352055/",
+      "id": "2577352055",
+      "icon": "https://img9.doubanio.com/view/photo/s/public/p2577352055.webp"
+    },
+    {
+      "thumb": "https://img9.doubanio.com/view/photo/m/public/p2577351999.webp",
+      "image": "https://img9.doubanio.com/view/photo/l/public/p2577351999.webp",
+      "cover": "https://img9.doubanio.com/view/photo/sqs/public/p2577351999.webp",
+      "alt": "https://movie.douban.com/photos/photo/2577351999/",
+      "id": "2577351999",
+      "icon": "https://img9.doubanio.com/view/photo/s/public/p2577351999.webp"
+    },
+    {
+      "thumb": "https://img9.doubanio.com/view/photo/m/public/p2577351509.webp",
+      "image": "https://img9.doubanio.com/view/photo/l/public/p2577351509.webp",
+      "cover": "https://img9.doubanio.com/view/photo/sqs/public/p2577351509.webp",
+      "alt": "https://movie.douban.com/photos/photo/2577351509/",
+      "id": "2577351509",
+      "icon": "https://img9.doubanio.com/view/photo/s/public/p2577351509.webp"
+    },
+    {
+      "thumb": "https://img9.doubanio.com/view/photo/m/public/p2577314166.webp",
+      "image": "https://img9.doubanio.com/view/photo/l/public/p2577314166.webp",
+      "cover": "https://img9.doubanio.com/view/photo/sqs/public/p2577314166.webp",
+      "alt": "https://movie.douban.com/photos/photo/2577314166/",
+      "id": "2577314166",
+      "icon": "https://img9.doubanio.com/view/photo/s/public/p2577314166.webp"
+    }
+  ],
+  "summary": "影片改编自真实事件，理查德·朱维尔作为1996年亚特兰大奥运会爆炸案中发现炸弹装置的保安，而被全世界所熟知。当时他迅速采取行动，拯救了无数生命而成为英雄。但在几天之内，情况就急转直下，梦想成为执法者的他遭受媒体和公众的诽谤，竟成为联邦调查局的头号嫌疑犯，陷入了前所未有的 困境。朱维尔向独立律师沃森·布莱恩特寻求帮助，坚定地宣称自己无罪。然而，在为朱维尔洗脱罪名的过程中，布莱恩特发现自己对抗的是联邦调查局、佐治亚州调查局和警方的联合阻力；与此同时，他也不断提醒理查德不要相信任何试图毁灭他的人……",
+  "clips": [
+    {
+      "medium": "https://img9.doubanio.com/img/trailer/medium/2580034743.jpg?",
+      "title": "片段 (中文字幕)",
+      "subject_id": "25842038",
+      "alt": "https://movie.douban.com/trailer/257476/",
+      "small": "https://img9.doubanio.com/img/trailer/small/2580034743.jpg?",
+      "resource_url": "https://vt1.doubanio.com/202006082016/5359c3db53951825e4029a8dbc3fb6e2/view/movie/M/302570476.mp4",
+      "id": "257476"
+    }
+  ],
+  "subtype": "movie",
+  "directors": [
+    {
+      "avatars": {
+        "small": "https://img9.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1438777188.48.webp",
+        "large": "https://img9.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1438777188.48.webp",
+        "medium": "https://img9.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1438777188.48.webp"
+      },
+      "name_en": "Clint Eastwood",
+      "name": "克林特·伊斯特伍德",
+      "alt": "https://movie.douban.com/celebrity/1054436/",
+      "id": "1054436"
+    }
+  ],
+  "comments_count": 20770,
+  "popular_reviews": [
+    {
+      "rating": {
+        "max": 5,
+        "value": 5.0,
+        "min": 0
+      },
+      "title": "一个小人物引发的政治大战",
+      "subject_id": "25842038",
+      "author": {
+        "uid": "xxsxiong",
+        "avatar": "https://img9.doubanio.com/icon/u1119525-1.jpg",
+        "signature": "在歧路与穷途之间彷徨~~~~~",
+        "alt": "https://www.douban.com/people/xxsxiong/",
+        "id": "1119525",
+        "name": "花菲花"
+      },
+      "summary": "看了电影后不是很能理解为什么这部电影在颁奖季没有什么水花，所以便在网上搜了搜评论。在烂番茄上，这部电影的媒体评分只有73%，远远不及《利剑出鞘》等电影。我更疑惑了，于是仔细看了看这些媒体的评价。最终引...",
+      "alt": "https://movie.douban.com/review/12105991/",
+      "id": "12105991"
+    },
+    {
+      "rating": {
+        "max": 5,
+        "value": 4.0,
+        "min": 0
+      },
+      "title": "为了销量和热度，他们甘愿抛弃良心",
+      "subject_id": "25842038",
+      "author": {
+        "uid": "lingrui1995",
+        "avatar": "https://img9.doubanio.com/icon/u63688511-18.jpg",
+        "signature": "一个影迷",
+        "alt": "https://www.douban.com/people/lingrui1995/",
+        "id": "63688511",
+        "name": "凌睿"
+      },
+      "summary": "欢迎关注公众号【凌睿电影】 克林特·伊斯特伍德拍电影的速度真的很快，而且质量也很高。 2018年圣诞档才上映了《骡子》，2019年圣诞档又有了新片《理查德·朱维尔的哀歌》上映。 影片改编自真实事件，1996年亚特...",
+      "alt": "https://movie.douban.com/review/12159564/",
+      "id": "12159564"
+    },
+    {
+      "rating": {
+        "max": 5,
+        "value": 5.0,
+        "min": 0
+      },
+      "title": "老右棍克林特，红脖子伊斯特伍德",
+      "subject_id": "25842038",
+      "author": {
+        "uid": "207161652",
+        "avatar": "https://img9.doubanio.com/icon/u207161652-7.jpg",
+        "signature": "电影是我的圣经",
+        "alt": "https://www.douban.com/people/207161652/",
+        "id": "207161652",
+        "name": "二斤肉"
+      },
+      "summary": "在我的观影序列里，这应该是老头百万美元宝贝以后最好的一部作品，也是可以提前排进我今年个人观影十佳的电影。 毫无疑问离90周岁还差1年4个月的伊斯特伍德依然有着旺盛的创作欲，而创作于最直接的来源便是他的愤...",
+      "alt": "https://movie.douban.com/review/12158860/",
+      "id": "12158860"
+    },
+    {
+      "rating": {
+        "max": 5,
+        "value": 4.0,
+        "min": 0
+      },
+      "title": "如果英雄哀莫大于心死，这个社会就只会剩下小丑",
+      "subject_id": "25842038",
+      "author": {
+        "uid": "yorkfernando",
+        "avatar": "https://img9.doubanio.com/icon/u57474452-9.jpg",
+        "signature": "把电影榨成汁，却说都是干货",
+        "alt": "https://www.douban.com/people/yorkfernando/",
+        "id": "57474452",
+        "name": "电影榨汁"
+      },
+      "summary": "克林特·伊斯特伍德（Clint Eastwood）。 因为姓氏East和Wood直译过来就是“东”和“木”，所以就被大家就这么亲切地叫起来。 这部电影名字拗口，卖相一般，但因为是90岁高龄的“东木”的新作，能在大银幕看到的...",
+      "alt": "https://movie.douban.com/review/12165146/",
+      "id": "12165146"
+    },
+    {
+      "rating": {
+        "max": 5,
+        "value": 4.0,
+        "min": 0
+      },
+      "title": "理查德·朱维尔并不那么哀的哀歌",
+      "subject_id": "25842038",
+      "author": {
+        "uid": "qmigh",
+        "avatar": "https://img9.doubanio.com/icon/u1001468-3.jpg",
+        "signature": "",
+        "alt": "https://www.douban.com/people/qmigh/",
+        "id": "1001468",
+        "name": "qmigh"
+      },
+      "summary": "今晚看了Clint Eastwood大爷的片子《理查德·朱维尔的哀歌》，居然想写点东西。 先说说影片讲述的故事。 这是根据真人实事改编的电影。男主角Richard Jewell是1996年亚特兰大奥运会周边演唱会场馆的保安，某天晚...",
+      "alt": "https://movie.douban.com/review/12164268/",
+      "id": "12164268"
+    },
+    {
+      "rating": {
+        "max": 5,
+        "value": 4.0,
+        "min": 0
+      },
+      "title": "古典主义的捍卫者",
+      "subject_id": "25842038",
+      "author": {
+        "uid": "doloreshaze",
+        "avatar": "https://img9.doubanio.com/icon/u74249497-23.jpg",
+        "signature": "",
+        "alt": "https://www.douban.com/people/doloreshaze/",
+        "id": "74249497",
+        "name": "csh"
+      },
+      "summary": "作者：csh 本文首发于《陀螺电影》 像《骡子》与《理查德·朱维尔的哀歌》这样的作品，在院线电影中实在太罕见了。 观众们或许很难辨明它们的独特之处，但它们确实能够给人一种极为流畅、舒适的观感。而这恰恰是...",
+      "alt": "https://movie.douban.com/review/12158395/",
+      "id": "12158395"
+    },
+    {
+      "rating": {
+        "max": 5,
+        "value": 4.0,
+        "min": 0
+      },
+      "title": "不是一部完美的作品，但一年能看到两部东木的片子很幸福",
+      "subject_id": "25842038",
+      "author": {
+        "uid": "48369193",
+        "avatar": "https://img9.doubanio.com/icon/u48369193-16.jpg",
+        "signature": "",
+        "alt": "https://www.douban.com/people/48369193/",
+        "id": "48369193",
+        "name": "二十二岛主"
+      },
+      "summary": "本文首发于公众号：电影岛赏（j_movie），欢迎关注。 作者：DA_JR11 与近年来的作品风格非常相似的是，《理查德·朱维尔的哀歌》依旧是观众所熟悉的“东木出品”电影，一个明确的现实主义故事，着墨于对真实事件...",
+      "alt": "https://movie.douban.com/review/12154875/",
+      "id": "12154875"
+    },
+    {
+      "rating": {
+        "max": 5,
+        "value": 3.0,
+        "min": 0
+      },
+      "title": "英雄泪",
+      "subject_id": "25842038",
+      "author": {
+        "uid": "xfdzl",
+        "avatar": "https://img9.doubanio.com/icon/u35918872-2.jpg",
+        "signature": "那不是缺陷，是你不在梦中",
+        "alt": "https://www.douban.com/people/xfdzl/",
+        "id": "35918872",
+        "name": "西风独自凉"
+      },
+      "summary": "好莱坞属于自由进步派的重灾区，两部近年来罕见的佳作在奥斯卡颗粒无收：《佛罗里达乐园》（2017）挑战儿童保护的政治正确，《巴斯特·斯克鲁格斯的歌谣》 (2018)不仅没有土著拯救白人的鸡汤，还涉嫌丑化土著和“...",
+      "alt": "https://movie.douban.com/review/12171684/",
+      "id": "12171684"
+    },
+    {
+      "rating": {
+        "max": 5,
+        "value": 4.0,
+        "min": 0
+      },
+      "title": "与萨利机长握手的朱维尔 [猫]",
+      "subject_id": "25842038",
+      "author": {
+        "uid": "OldCatMiMiMi",
+        "avatar": "https://img9.doubanio.com/icon/u1339547-3.jpg",
+        "signature": "你放心",
+        "alt": "https://www.douban.com/people/OldCatMiMiMi/",
+        "id": "1339547",
+        "name": "九命猫@victor-eyes"
+      },
+      "summary": "本文发表于《上海电视》2020年1月某期。如需转载，请一定联系本人、一定注明、一定附上豆瓣链接！ ------------------------------------------------------------------------- 光看电影介绍，就知道《理查德·...",
+      "alt": "https://movie.douban.com/review/12485505/",
+      "id": "12485505"
+    },
+    {
+      "rating": {
+        "max": 5,
+        "value": 4.0,
+        "min": 0
+      },
+      "title": "这位90岁的老人对美国政府和媒体啪啪打了2个耳光",
+      "subject_id": "25842038",
+      "author": {
+        "uid": "162892300",
+        "avatar": "https://img9.doubanio.com/icon/u162892300-2.jpg",
+        "signature": "给有趣的灵魂穿上漂亮的外衣",
+        "alt": "https://www.douban.com/people/162892300/",
+        "id": "162892300",
+        "name": "RickyLIU"
+      },
+      "summary": "首先要生存，其次才可能有成就 R君说 “我们发展了、进步了， 但反而给自己带来了贫困； 我们学得更加聪明了、乖巧了， 但反而变得冷酷无情。 我们头脑越用越多，但情感却越用越少。 我们需要的不是机器，而是人...",
+      "alt": "https://movie.douban.com/review/12192698/",
+      "id": "12192698"
+    }
+  ],
+  "ratings_count": 64879,
+  "aka": [
+    "李察朱维尔：惊世疑案(港)",
+    "李察朱威尔事件(台)",
+    "美国噩梦",
+    "理查德·朱厄尔",
+    "理查德·朱厄尔的悲歌",
+    "理查德·朱厄尔的歌谣",
+    "理查德·朱维尔的歌谣",
+    "理查德·杰威尔的歌谣",
+    "The Ballad of Richard Jewell",
+    "American Nightmare",
+    "American Nightmare: The Ballad of Richard Jewell"
+  ]
+}
