@@ -1,19 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutterdemo/pages/douban/model/movie_detail.dart';
 class DetailHeader extends SliverPersistentHeaderDelegate {
   final double collapsedHeight;
   final double expandedHeight;
   final double paddingTop;
-  final String coverImgUrl;
   final String title;
+  final Color pageColor;
+  final MovieDetail movieDetail;
   String statusBarMode = 'dark';
 
   DetailHeader({
     this.collapsedHeight,
     this.expandedHeight,
     this.paddingTop,
-    this.coverImgUrl,
     this.title,
+    this.pageColor,
+    this.movieDetail,
   });
 
   @override
@@ -45,7 +48,7 @@ class DetailHeader extends SliverPersistentHeaderDelegate {
 
   Color makeStickyHeaderBgColor(shrinkOffset) {
     final int alpha = (shrinkOffset / (this.maxExtent - this.minExtent) * 255).clamp(0, 255).toInt();
-    return Color.fromARGB(alpha, 255, 255, 255);
+    return Color.fromARGB(alpha, pageColor.red, pageColor.green, pageColor.blue);
   }
 
   Color makeStickyHeaderTextColor(shrinkOffset, isIcon) {
@@ -53,7 +56,7 @@ class DetailHeader extends SliverPersistentHeaderDelegate {
       return isIcon ? Colors.white : Colors.transparent;
     } else {
       final int alpha = (shrinkOffset / (this.maxExtent - this.minExtent) * 255).clamp(0, 255).toInt();
-      return Color.fromARGB(alpha, 0, 0, 0);
+      return Color.fromARGB(alpha, 255, 255, 255);
     }
   }
 
@@ -66,7 +69,64 @@ class DetailHeader extends SliverPersistentHeaderDelegate {
       child: Stack(
         fit: StackFit.expand,
         children: <Widget>[
-          Container(child: Image.network(this.coverImgUrl, fit: BoxFit.cover)),
+          Container(child: Image.network(movieDetail.photos[0]["thumb"], fit: BoxFit.cover)),
+          Positioned(
+            left: 16,
+            bottom: 50,
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(6),
+                  child: Image.network(
+                    movieDetail.images["small"],
+                    width: 130,
+                    height: 180,
+                    fit: BoxFit.cover,
+                  ),
+                ),
+                Padding(padding: EdgeInsets.only(left: 16)),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      movieDetail.title,
+                      style: TextStyle(
+                        fontSize: 25,
+                        fontWeight: FontWeight.bold,
+                        color:Colors.white,
+                      ),
+                    ),
+                    Padding(padding: EdgeInsets.only(top: 10)),
+                    Text(
+                      '动画/中国大陆/110分钟',
+                      style: TextStyle(
+                        fontSize: 15,
+                        color: Colors.white,
+                      ),
+                    ),
+                    Padding(padding: EdgeInsets.only(top: 2)),
+                    Text(
+                      '2019-07-26 08:00 中国大陆上映',
+                      style: TextStyle(
+                        fontSize: 15,
+                        color: Colors.white,
+                      ),
+                    ),
+                    Padding(padding: EdgeInsets.only(top: 2)),
+                    Text(
+                      '32.1万人想看/大V推荐度95%',
+                      style: TextStyle(
+                        fontSize: 15,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+
           Positioned(
             left: 0,
             top: this.maxExtent / 2,
@@ -106,7 +166,7 @@ class DetailHeader extends SliverPersistentHeaderDelegate {
                         onPressed: () => Navigator.pop(context),
                       ),
                       Text(
-                        this.title,
+                        movieDetail.title,
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.w500,

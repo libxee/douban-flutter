@@ -6,8 +6,8 @@ part of 'movie_detail.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-Movie_detail _$Movie_detailFromJson(Map<String, dynamic> json) {
-  return Movie_detail()
+MovieDetail _$MovieDetailFromJson(Map<String, dynamic> json) {
+  return MovieDetail()
     ..rating = json['rating'] as Map<String, dynamic>
     ..reviews_count = json['reviews_count'] as num
     ..videos = json['videos'] as List
@@ -60,7 +60,7 @@ Movie_detail _$Movie_detailFromJson(Map<String, dynamic> json) {
     ..aka = json['aka'] as List;
 }
 
-Map<String, dynamic> _$Movie_detailToJson(Movie_detail instance) =>
+Map<String, dynamic> _$MovieDetailToJson(MovieDetail instance) =>
     <String, dynamic>{
       'rating': instance.rating,
       'reviews_count': instance.reviews_count,

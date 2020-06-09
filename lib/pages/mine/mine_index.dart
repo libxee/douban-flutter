@@ -5,7 +5,7 @@ class MineIndex extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("豆瓣"),
+        title: Text("我的"),
       ),
     );
   }
