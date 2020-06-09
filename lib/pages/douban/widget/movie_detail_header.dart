@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutterdemo/pages/douban/model/movie_detail.dart';
+import 'package:flutterdemo/util/screen.dart';
 
 import 'movie_cover.dart';
 
@@ -102,7 +103,7 @@ class DetailHeader extends SliverPersistentHeaderDelegate {
           ),
           Positioned(
             left: 16,
-            bottom: 50,
+            bottom: 30,
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
@@ -115,53 +116,56 @@ class DetailHeader extends SliverPersistentHeaderDelegate {
                   ),
                 ),
                 Padding(padding: EdgeInsets.only(left: 16)),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Text(
-                      movieDetail.title,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: TextStyle(
-                        fontSize: 25,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
+                Container(
+                  width: Screen.width - 180,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        movieDetail.title,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
                       ),
-                    ),
-                    Padding(padding: EdgeInsets.only(top: 6)),
-                    Text(
-                      "${movieDetail.original_title} (${movieDetail.year})",
-                      style: TextStyle(
-                        fontSize: 16,
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
+                      Padding(padding: EdgeInsets.only(top: 6)),
+                      Text(
+                        "${movieDetail.original_title} (${movieDetail.year})",
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
-                    ),
-                    Padding(padding: EdgeInsets.only(top: 8)),
-                    Text(
-                      "${list2String(movieDetail.genres)} / ${list2String(movieDetail.durations)}",
-                      style: TextStyle(
-                        fontSize: 15,
-                        color: Colors.white,
+                      Padding(padding: EdgeInsets.only(top: 8)),
+                      Text(
+                        "${list2String(movieDetail.genres)} / ${list2String(movieDetail.durations)}",
+                        style: TextStyle(
+                          fontSize: 12,
+                          color: Colors.white,
+                        ),
                       ),
-                    ),
-                    Padding(padding: EdgeInsets.only(top: 2)),
-                    Text(
-                      '上映时间：${list2String(movieDetail.pubdates)}',
-                      style: TextStyle(
-                        fontSize: 15,
-                        color: Colors.white,
+                      Padding(padding: EdgeInsets.only(top: 4)),
+                      Text(
+                        '上映时间：${list2String(movieDetail.pubdates)}',
+                        style: TextStyle(
+                          fontSize: 12,
+                          color: Colors.white,
+                        ),
                       ),
-                    ),
-                    Padding(padding: EdgeInsets.only(top: 2)),
-                    Text(
-                      '${movieDetail.collect_count}人看过 / ${movieDetail.wish_count}人想看',
-                      style: TextStyle(
-                        fontSize: 15,
-                        color: Colors.white,
+                      Padding(padding: EdgeInsets.only(top: 4)),
+                      Text(
+                        '${movieDetail.collect_count}人看过 / ${movieDetail.wish_count}人想看',
+                        style: TextStyle(
+                          fontSize: 12,
+                          color: Colors.white,
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ],
             ),

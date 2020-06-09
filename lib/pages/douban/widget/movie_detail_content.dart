@@ -12,7 +12,7 @@ class MovieContent extends StatelessWidget {
     return Container(
       child: Text(text,
           style: TextStyle(
-            fontSize: 20,
+            fontSize: 18,
             fontWeight: FontWeight.bold,
             color: Colors.white,
           )),
@@ -29,7 +29,7 @@ class MovieContent extends StatelessWidget {
             movieDetail.summary,
             textAlign: TextAlign.justify,
             style: TextStyle(
-              fontSize: 15,
+              fontSize: 14,
               color: Colors.white,
             ),
           ),
@@ -106,7 +106,7 @@ class MovieContent extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
                             MovieCoverImage(
-                              person["avatars"] != null ? person["avatars"]["large"]:"http://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p23269.jpg",
+                              person["avatars"] != null ? person["avatars"]["large"]:"http://img1.doubanio.com/f/movie/ca527386eb8c4e325611e22dfcb04cc116d6b423/pics/movie/celebrity-default-small.png",
                               width: 100,
                               height: 140,
                             ),

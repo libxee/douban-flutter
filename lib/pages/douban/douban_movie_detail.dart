@@ -41,7 +41,7 @@ class _DoubanMovieDetailState extends State<DoubanMovieDetail> {
             delegate: DetailHeader(
               title: arguments["movieTitle"],
               collapsedHeight: 50,
-              expandedHeight: 320,
+              expandedHeight: 300,
               paddingTop: MediaQuery.of(context).padding.top,
               pageColor: pageColor,
               movieDetail: movieDetail,

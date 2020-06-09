@@ -20,6 +20,8 @@
 ####  预览
 
 <div>
-  <img width="32%" src="./assets/screenshot/douban_index.png"/>
+   <img width="32%" src="./assets/screenshot/douban_index.png"/>
+   <img width="32%" src="./assets/screenshot/douban_index.gif"/>
    <img width="32%" src="./assets/screenshot/douban_ranklist.png"/>
+   <img width="32%" src="./assets/screenshot/douban_detail.gif"/>
 </div>
