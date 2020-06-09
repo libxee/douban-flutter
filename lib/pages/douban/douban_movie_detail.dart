@@ -29,7 +29,7 @@ class _DoubanMovieDetailState extends State<DoubanMovieDetail> {
 
   @override
   Widget build(BuildContext context) {
-    if (movieDetail == null) {
+    if (movieDetail == null ) {
       return Center(child: CupertinoActivityIndicator());
     }
     return Scaffold(

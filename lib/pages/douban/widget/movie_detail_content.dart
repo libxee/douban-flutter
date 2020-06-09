@@ -76,22 +76,25 @@ class MovieContent extends StatelessWidget {
   }
 
   Widget _buildCasts() {
-    movieDetail.directors.map((e) => e["type"] = "导演");
-    movieDetail.casts.map((e) => e["type"] = "演员");
-    List directorAndCast = [...movieDetail.directors, ...movieDetail.casts];
-    print(directorAndCast.length);
+    (movieDetail.directors?? []).map((e) => e["type"] = "导演");
+    (movieDetail.casts ?? []).map((e) => e["type"] = "演员");
+    List directorAndCast = [
+      ...movieDetail.directors ?? [],
+      ...movieDetail.casts ?? []
+    ];
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         _sectionTitle("演职员"),
         Padding(padding: EdgeInsets.only(top: 10)),
         Container(
-          height: 200,
+          height: 180,
           child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: directorAndCast.length,
               itemBuilder: (BuildContext context, int index) {
                 var person = directorAndCast[index];
+                print(person);
                 return Padding(
                   padding: EdgeInsets.only(right: 10),
                   child: Container(
@@ -103,7 +106,7 @@ class MovieContent extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
                             MovieCoverImage(
-                              person["avatars"]["small"],
+                              person["avatars"] != null ? person["avatars"]["large"]:"http://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p23269.jpg",
                               width: 100,
                               height: 140,
                             ),
@@ -140,6 +143,36 @@ class MovieContent extends StatelessWidget {
     );
   }
 
+  Widget _buildStills() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        _sectionTitle("预告片/剧照"),
+        Padding(padding: EdgeInsets.only(top: 10)),
+        Container(
+          height: 140,
+          child: ListView.builder(
+              scrollDirection: Axis.horizontal,
+              itemCount: movieDetail.photos.length,
+              itemBuilder: (BuildContext context, int index) {
+                var photo = movieDetail.photos[index];
+                return Padding(
+                  padding: EdgeInsets.only(right: 6),
+                  child: Container(
+                    child: MovieCoverImage(
+                      photo["thumb"],
+                      width: 200,
+                      height: 140,
+                    ),
+                  ),
+                );
+              }),
+        )
+      ],
+    );
+  }
+
+  Widget _buildComments() {}
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -156,6 +189,8 @@ class MovieContent extends StatelessWidget {
               _buildSummary(),
               Padding(padding: EdgeInsets.only(top: 36)),
               _buildCasts(),
+              Padding(padding: EdgeInsets.only(top: 36)),
+              _buildStills(),
             ],
           ),
         ],

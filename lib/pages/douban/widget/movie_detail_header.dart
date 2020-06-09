@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutterdemo/pages/douban/model/movie_detail.dart';
+
+import 'movie_cover.dart';
+
 class DetailHeader extends SliverPersistentHeaderDelegate {
   final double collapsedHeight;
   final double expandedHeight;
@@ -31,13 +34,13 @@ class DetailHeader extends SliverPersistentHeaderDelegate {
   }
 
   void updateStatusBarBrightness(shrinkOffset) {
-    if(shrinkOffset > 50 && this.statusBarMode == 'dark') {
+    if (shrinkOffset > 50 && this.statusBarMode == 'dark') {
       this.statusBarMode = 'light';
       SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
         statusBarBrightness: Brightness.light,
         statusBarIconBrightness: Brightness.light,
       ));
-    } else if(shrinkOffset <= 50 && this.statusBarMode == 'light') {
+    } else if (shrinkOffset <= 50 && this.statusBarMode == 'light') {
       this.statusBarMode = 'dark';
       SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
         statusBarBrightness: Brightness.dark,
@@ -47,21 +50,35 @@ class DetailHeader extends SliverPersistentHeaderDelegate {
   }
 
   Color makeStickyHeaderBgColor(shrinkOffset) {
-    final int alpha = (shrinkOffset / (this.maxExtent - this.minExtent) * 255).clamp(0, 255).toInt();
-    return Color.fromARGB(alpha, pageColor.red, pageColor.green, pageColor.blue);
+    final int alpha = (shrinkOffset / (this.maxExtent - this.minExtent) * 255)
+        .clamp(0, 255)
+        .toInt();
+    return Color.fromARGB(
+        alpha, pageColor.red, pageColor.green, pageColor.blue);
   }
 
   Color makeStickyHeaderTextColor(shrinkOffset, isIcon) {
-    if(shrinkOffset <= 50) {
+    if (shrinkOffset <= 50) {
       return isIcon ? Colors.white : Colors.transparent;
     } else {
-      final int alpha = (shrinkOffset / (this.maxExtent - this.minExtent) * 255).clamp(0, 255).toInt();
+      final int alpha = (shrinkOffset / (this.maxExtent - this.minExtent) * 255)
+          .clamp(0, 255)
+          .toInt();
       return Color.fromARGB(alpha, 255, 255, 255);
     }
   }
 
+  String list2String(List list) {
+    StringBuffer sb = new StringBuffer();
+    list.forEach((item) {
+      sb.write(' $item ');
+    });
+    return sb.toString();
+  }
+
   @override
-  Widget build(BuildContext context, double shrinkOffset, bool overlapsContent) {
+  Widget build(
+      BuildContext context, double shrinkOffset, bool overlapsContent) {
     this.updateStatusBarBrightness(shrinkOffset);
     return Container(
       height: this.maxExtent,
@@ -69,7 +86,20 @@ class DetailHeader extends SliverPersistentHeaderDelegate {
       child: Stack(
         fit: StackFit.expand,
         children: <Widget>[
-          Container(child: Image.network(movieDetail.photos[0]["thumb"], fit: BoxFit.cover)),
+          Container(
+              child: Image.network(movieDetail.photos[0]["thumb"],
+                  fit: BoxFit.cover)),
+          Positioned(
+            left: 0,
+            top: 0,
+            right: 0,
+            bottom: 0,
+            child: Container(
+              decoration: BoxDecoration(
+                  color: Color.fromRGBO(
+                      pageColor.red, pageColor.green, pageColor.blue, 0.6)),
+            ),
+          ),
           Positioned(
             left: 16,
             bottom: 50,
@@ -78,11 +108,10 @@ class DetailHeader extends SliverPersistentHeaderDelegate {
               children: <Widget>[
                 ClipRRect(
                   borderRadius: BorderRadius.circular(6),
-                  child: Image.network(
-                    movieDetail.images["small"],
+                  child: MovieCoverImage(
+                    movieDetail.images["large"],
                     width: 130,
                     height: 180,
-                    fit: BoxFit.cover,
                   ),
                 ),
                 Padding(padding: EdgeInsets.only(left: 16)),
@@ -91,15 +120,26 @@ class DetailHeader extends SliverPersistentHeaderDelegate {
                   children: <Widget>[
                     Text(
                       movieDetail.title,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
                       style: TextStyle(
                         fontSize: 25,
                         fontWeight: FontWeight.bold,
-                        color:Colors.white,
+                        color: Colors.white,
                       ),
                     ),
-                    Padding(padding: EdgeInsets.only(top: 10)),
+                    Padding(padding: EdgeInsets.only(top: 6)),
                     Text(
-                      '动画/中国大陆/110分钟',
+                      "${movieDetail.original_title} (${movieDetail.year})",
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Padding(padding: EdgeInsets.only(top: 8)),
+                    Text(
+                      "${list2String(movieDetail.genres)} / ${list2String(movieDetail.durations)}",
                       style: TextStyle(
                         fontSize: 15,
                         color: Colors.white,
@@ -107,7 +147,7 @@ class DetailHeader extends SliverPersistentHeaderDelegate {
                     ),
                     Padding(padding: EdgeInsets.only(top: 2)),
                     Text(
-                      '2019-07-26 08:00 中国大陆上映',
+                      '上映时间：${list2String(movieDetail.pubdates)}',
                       style: TextStyle(
                         fontSize: 15,
                         color: Colors.white,
@@ -115,7 +155,7 @@ class DetailHeader extends SliverPersistentHeaderDelegate {
                     ),
                     Padding(padding: EdgeInsets.only(top: 2)),
                     Text(
-                      '32.1万人想看/大V推荐度95%',
+                      '${movieDetail.collect_count}人看过 / ${movieDetail.wish_count}人想看',
                       style: TextStyle(
                         fontSize: 15,
                         color: Colors.white,
@@ -124,25 +164,6 @@ class DetailHeader extends SliverPersistentHeaderDelegate {
                   ],
                 ),
               ],
-            ),
-          ),
-
-          Positioned(
-            left: 0,
-            top: this.maxExtent / 2,
-            right: 0,
-            bottom: 0,
-            child: Container(
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: [
-                    Color(0x00000000),
-                    Color(0x90000000),
-                  ],
-                ),
-              ),
             ),
           ),
           Positioned(
@@ -161,7 +182,8 @@ class DetailHeader extends SliverPersistentHeaderDelegate {
                       IconButton(
                         icon: Icon(
                           Icons.arrow_back_ios,
-                          color: this.makeStickyHeaderTextColor(shrinkOffset, true),
+                          color: this
+                              .makeStickyHeaderTextColor(shrinkOffset, true),
                         ),
                         onPressed: () => Navigator.pop(context),
                       ),
@@ -170,13 +192,15 @@ class DetailHeader extends SliverPersistentHeaderDelegate {
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.w500,
-                          color: this.makeStickyHeaderTextColor(shrinkOffset, false),
+                          color: this
+                              .makeStickyHeaderTextColor(shrinkOffset, false),
                         ),
                       ),
                       IconButton(
                         icon: Icon(
                           Icons.share,
-                          color: this.makeStickyHeaderTextColor(shrinkOffset, true),
+                          color: this
+                              .makeStickyHeaderTextColor(shrinkOffset, true),
                         ),
                         onPressed: () {},
                       ),
