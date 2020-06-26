@@ -12,7 +12,7 @@ class Api {
       "http://v3.wufazhuce.com:8000/api/hp/bymonth/"; //2019-08
   static const oneDetailById =
       "http://v3.wufazhuce.com:8000/api/onelist/"; //2554/0
-  static const doubanMovies = "https://douban.uieee.com/v2/movie/";
+  static const doubanMovies = "http://api.douban.com/v2/movie/";
   static const doubanMovieDetail = "http://api.douban.com/v2/movie/subject/";
   static const doubanApiKey = "0b2bdeda43b5688921839c8ecb20399b";
 
@@ -55,8 +55,9 @@ class Api {
     print(start);
     Response<Map> response =
         await dio.get(doubanMovies + type, queryParameters: {
-      "start": start,
-      "count": count,
+          "apikey": doubanApiKey,
+          "start": start,
+          "count": count,
     });
     print(response);
     return response.data;
