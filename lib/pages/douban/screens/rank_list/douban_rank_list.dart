@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterdemo/common/api.dart';
-import 'package:flutterdemo/pages/douban/widget/toplist_rank_item.dart';
+import 'package:flutterdemo/pages/douban/screens/rank_list/toplist_rank_item.dart';
 
-import 'model/movie_item.dart';
+import '../../model/movie_item.dart';
 
 class DoubanRankList extends StatefulWidget {
   var arguments;

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutterdemo/components/bottom_navigation_widget.dart';
-import 'package:flutterdemo/pages/douban/douban_movie_detail.dart';
-import 'package:flutterdemo/pages/douban/douban_rank_list.dart';
+import 'package:flutterdemo/pages/douban/screens/movie_detail/douban_movie_detail.dart';
+import 'package:flutterdemo/pages/douban/screens/rank_list/douban_rank_list.dart';
 import 'package:flutterdemo/pages/one/one_detail.dart';
 
 final String home = "/";

@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutterdemo/pages/douban/model/movie_detail.dart';
 import 'package:flutterdemo/util/screen.dart';
 
-import 'movie_cover.dart';
+import '../../widget/movie_cover.dart';
 
 class DetailHeader extends SliverPersistentHeaderDelegate {
   final double collapsedHeight;

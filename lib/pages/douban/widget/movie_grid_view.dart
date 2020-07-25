@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutterdemo/pages/douban/model/movie_item.dart';
 import 'package:flutterdemo/pages/douban/widget/movie_item_view.dart';
-import 'package:flutterdemo/pages/douban/widget/section_view.dart';
+import 'package:flutterdemo/pages/douban/screens/index/section_view.dart';
 
 class MovieGridView extends StatelessWidget {
   final List<MovieItem> movies;

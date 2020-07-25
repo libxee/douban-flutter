@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutterdemo/common/api.dart';
 import 'package:flutterdemo/pages/douban/model/movie_item.dart';
 import 'package:flutterdemo/pages/douban/widget/movie_grid_view.dart';
-import 'package:flutterdemo/pages/douban/widget/toplist_banner.dart';
+import 'package:flutterdemo/pages/douban/screens/index/toplist_banner.dart';
 
 class DoubanIndex extends StatefulWidget {
   final Widget child;

@@ -2,7 +2,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterdemo/pages/douban/model/rank_item.dart';
-import 'package:flutterdemo/pages/douban/widget/toplist_banner_item.dart';
+import 'package:flutterdemo/pages/douban/screens/index/toplist_banner_item.dart';
 
 class TopListBanner extends StatefulWidget {
   @override

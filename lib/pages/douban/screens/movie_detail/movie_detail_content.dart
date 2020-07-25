@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterdemo/pages/douban/model/movie_detail.dart';
@@ -76,7 +77,7 @@ class MovieContent extends StatelessWidget {
   }
 
   Widget _buildCasts() {
-    (movieDetail.directors?? []).map((e) => e["type"] = "导演");
+    (movieDetail.directors ?? []).map((e) => e["type"] = "导演");
     (movieDetail.casts ?? []).map((e) => e["type"] = "演员");
     List directorAndCast = [
       ...movieDetail.directors ?? [],
@@ -106,7 +107,9 @@ class MovieContent extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
                             MovieCoverImage(
-                              person["avatars"] != null ? person["avatars"]["large"]:"http://img1.doubanio.com/f/movie/ca527386eb8c4e325611e22dfcb04cc116d6b423/pics/movie/celebrity-default-small.png",
+                              person["avatars"] != null
+                                  ? person["avatars"]["large"]
+                                  : "http://img1.doubanio.com/f/movie/ca527386eb8c4e325611e22dfcb04cc116d6b423/pics/movie/celebrity-default-small.png",
                               width: 100,
                               height: 140,
                             ),
@@ -125,12 +128,6 @@ class MovieContent extends StatelessWidget {
                             SizedBox(
                               height: 3,
                             ),
-//                            Text(
-//                              person["type"],
-//                              overflow: TextOverflow.ellipsis,
-//                              style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
-//                              maxLines: 1,
-//                            ),
                           ],
                         ),
                       ),
@@ -172,7 +169,75 @@ class MovieContent extends StatelessWidget {
     );
   }
 
-  Widget _buildComments() {}
+  Widget _buildComments() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        _sectionTitle("精选短评"),
+        Padding(padding: EdgeInsets.only(top: 5)),
+        Container(
+          child: ListView.builder(
+//            禁用子list的滚动
+              physics: const NeverScrollableScrollPhysics(),
+              itemCount: movieDetail.popular_comments.length,
+              shrinkWrap: true,
+              itemBuilder: (BuildContext context, int index) {
+                var comment = movieDetail.popular_comments[index];
+                print(comment);
+                return Column(children: <Widget>[
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Container(
+                        child: Row(
+                          children: <Widget>[
+                            Image(
+                              image: CachedNetworkImageProvider(
+                                  comment["author"]["avatar"]),
+                              fit: BoxFit.cover,
+                              width: 40,
+                              height: 40,
+                            ),
+                            Padding(padding: EdgeInsets.only(right: 10),),
+                            Text(
+                              comment["author"]["name"],
+                              style: TextStyle(
+                                fontSize: 16,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+
+                      Row(
+                        children: <Widget>[
+//                          Icon(Icons.star,color: Colors.white),
+                          Text(
+                            "${comment["useful_count"].toString()}有用",
+                            style: TextStyle(
+                              fontSize: 15,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                  Container(
+                    child: Text(
+                      comment["content"],
+                      style: TextStyle(fontSize: 14, color: Colors.white),
+                    ),
+                    padding: EdgeInsets.fromLTRB(0, 10, 0, 30),
+                  )
+                ]);
+              }),
+        )
+      ],
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -191,6 +256,8 @@ class MovieContent extends StatelessWidget {
               _buildCasts(),
               Padding(padding: EdgeInsets.only(top: 36)),
               _buildStills(),
+              Padding(padding: EdgeInsets.only(top: 36)),
+              _buildComments()
             ],
           ),
         ],

@@ -3,8 +3,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterdemo/common/api.dart';
 import 'package:flutterdemo/pages/douban/model/movie_detail.dart';
-import 'package:flutterdemo/pages/douban/widget/movie_detail_content.dart';
-import 'package:flutterdemo/pages/douban/widget/movie_detail_header.dart';
+import 'package:flutterdemo/pages/douban/screens/movie_detail/movie_detail_content.dart';
+import 'package:flutterdemo/pages/douban/screens/movie_detail/movie_detail_header.dart';
 import 'package:palette_generator/palette_generator.dart';
 
 class DoubanMovieDetail extends StatefulWidget {

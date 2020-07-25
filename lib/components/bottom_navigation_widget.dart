@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterdemo/pages/douban/douban_index.dart';
+import 'package:flutterdemo/pages/douban/screens/index/douban_index.dart';
 import 'package:flutterdemo/pages/mine/mine_index.dart';
 import 'package:flutterdemo/pages/one/one_index.dart';
 
