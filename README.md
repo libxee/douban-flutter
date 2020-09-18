@@ -16,7 +16,7 @@
 </div>
 
 ### 豆瓣电影
-
+> 豆瓣API暂时被ban了，还没找到解决方案，有时间的话爬一下吧
 ####  预览
 
 <div>
@@ -25,3 +25,6 @@
    <img width="32%" src="./assets/screenshot/douban_ranklist.png"/>
    <img width="32%" src="./assets/screenshot/douban_detail.gif"/>
 </div>
+
+### 明日头条
+> 开一个新坑，加一个新闻模块，就叫明日头条吧
