@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutterdemo/pages/douban/screens/index/douban_index.dart';
 import 'package:flutterdemo/pages/mine/mine_index.dart';
 import 'package:flutterdemo/pages/one/one_index.dart';
-
+import 'package:flutterdemo/pages/toutiao/screens/toutiao_index/toutiao_index.dart';
 class BottomNavigationWidget extends StatefulWidget {
   @override
   State<StatefulWidget> createState() => BottomNavigationWidgetState();
@@ -25,7 +25,7 @@ class BottomNavigationWidgetState extends State<BottomNavigationWidget>
 
   @override
   void initState() {
-    list..add(DoubanIndex())..add(OneIndex())..add(MineIndex());
+    list..add(ToutiaoIndex())..add(DoubanIndex())..add(OneIndex())..add(MineIndex());
     super.initState();
   }
 
@@ -36,6 +36,7 @@ class BottomNavigationWidgetState extends State<BottomNavigationWidget>
       body: PageView(
         controller: _controller,
         children: <Widget>[
+          ToutiaoIndex(),
           DoubanIndex(),
           OneIndex(),
           MineIndex(),
@@ -53,6 +54,13 @@ class BottomNavigationWidgetState extends State<BottomNavigationWidget>
         },
         type: BottomNavigationBarType.fixed,
         items: [
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.movie,
+                color: _bottomNavigationColor,
+              ),
+              title:
+              Text('头条', style: TextStyle(color: _bottomNavigationColor))),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.movie,
